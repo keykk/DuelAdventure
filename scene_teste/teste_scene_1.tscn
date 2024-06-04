@@ -1,4 +1,4 @@
-[gd_scene load_steps=47 format=3 uid="uid://stg4ghdc7ul6"]
+[gd_scene load_steps=49 format=3 uid="uid://stg4ghdc7ul6"]
 
 [ext_resource type="Script" path="res://scripts/camera_pivot.gd" id="1_1i7fc"]
 [ext_resource type="Shader" path="res://shader/water.gdshader" id="1_il1vh"]
@@ -35,6 +35,8 @@
 [ext_resource type="PackedScene" uid="uid://buw32bxu5x7j" path="res://addns/KayKit_Adventurers_1.0_FREE/Assets/gltf/sword_2handed.gltf" id="33_5ool5"]
 [ext_resource type="PackedScene" uid="uid://dvn6k4vtm2qvy" path="res://addns/KayKit_Adventurers_1.0_FREE/Assets/gltf/sword_2handed_color.gltf" id="34_k42vs"]
 [ext_resource type="PackedScene" uid="uid://b22ygaqn6sk4c" path="res://addns/KayKit_Adventurers_1.0_FREE/Assets/gltf/wand.gltf" id="35_77tn1"]
+[ext_resource type="PackedScene" uid="uid://b6inmnkjy32ul" path="res://addns/KayKit_Skeletons_1.0_FREE/characters/gltf/Skeleton_Mage.glb" id="36_qe5ft"]
+[ext_resource type="PackedScene" uid="uid://dcdgrck2yb1h1" path="res://addns/KayKit_Skeletons_1.0_FREE/characters/gltf/Skeleton_Warrior.glb" id="37_re7y1"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_xtsii"]
 
@@ -241,3 +243,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30.9084, 4.4545, -22.6908)
 
 [node name="wand2" parent="." instance=ExtResource("35_77tn1")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.802, 3.17769, -25.8227)
+
+[node name="Skeleton_Mage" parent="." instance=ExtResource("36_qe5ft")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.66308, 2.65859, 10.8919)
+
+[node name="Skeleton_Warrior" parent="." instance=ExtResource("37_re7y1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.15599, 2.65859, 8.85747)
